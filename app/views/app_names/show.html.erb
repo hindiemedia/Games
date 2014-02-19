@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @app_name.title %>
+</p>
+
+<p>
+  <strong>Players:</strong>
+  <%= @app_name.players %>
+</p>
+
+<p>
+  <strong>Directions:</strong>
+  <%= @app_name.directions %>
+</p>
+
+<%= link_to 'Edit', edit_app_name_path(@app_name) %> |
+<%= link_to 'Back', app_names_path %>

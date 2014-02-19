@@ -1,0 +1,8 @@
+<% if @secret_number == @chosen_number %>
+	<h2> Congrats! You Won! </h2>
+<% else %>
+	<h2> Sorry, you lost</h2>
+	<p>The secret number was <%= @secret_number %> </p>
+<% end %>
+
+<h3><%= link_to "Play Again" new_secret_numbers_path%> </h3>

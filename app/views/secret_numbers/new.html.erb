@@ -1,0 +1,7 @@
+<h1>Welcome to Secret Number!</h1>
+
+<p>To play this game, all you have to do is guess a number. Click on a number below</p>
+
+<% (1..5).each do |number| %>
+	<%= link_to number, secret_number_path(number) %>
+<% end %>
